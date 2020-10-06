@@ -1,0 +1,30 @@
+r.numbers<-function(task.index){
+  foo_1<-function(){
+    c("E"=round(runif(1,min=10,max=40),1),
+      "t"=round(runif(1,min=50,max=150),0),
+      "a"=round(runif(1,min=10,max=40),1))
+  }
+  foo_2<-function(){
+    c("alpha"=round(runif(1,min=0.5,max=0.9),2),
+      "r"=round(runif(1,min=10,max=50),1),
+      "T"=round(runif(1,min=300,max=500),0))
+  }
+  foo_3<-function(){
+    c("T"=round(runif(1,min=1600,max=4000),0),
+    "lambda"=round(runif(1,min=5,max=15),2),
+    "alpha"=round(runif(1,min=0.3,max=0.9),2))
+  }
+  foo_4<-function(){
+    c("T1"=round(runif(1,min=273+34,max=273+36),1),
+      "T2"=round(runif(1,min=273+38,max=273+40),1))
+  }
+  foo_5<-function(){
+    c("T2"=round(runif(1,min=35,max=37),1),
+      "E"=round(runif(1,min=30,max=140),0),
+      "alpha"=round(runif(1,min=0.7,max=0.9),2),
+      "S"=round(runif(1,min=1.5,max=2.1),2)
+      )
+  }
+ 
+  switch(task.index,"1"=foo_1(),"2"=foo_2(),"3"=foo_3(),"4"=foo_4(),"5"=foo_5(),"6"=foo_6())
+}
